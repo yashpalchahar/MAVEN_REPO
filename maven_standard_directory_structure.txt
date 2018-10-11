@@ -1,0 +1,19 @@
+src                      Project source code(all files java/properties/any) 
+target 					 All compiled file goes to This directory.
+
+src/main/java	         Java classes
+src/main/resources	     Application resources files for src/main/java
+src/main/filters		 Resource filter files
+src/main/webapp			 Web application sources
+src/test/java			 Test Java sources
+src/test/resources		 Test resources files for src/main/java
+src/test/filters		 Test resource filter files
+src/it					 Integration Tests (primarily for plugins)
+src/assembly			 Assembly descriptors
+src/site				 Site
+LICENSE.txt				 Project's license
+NOTICE.txt				 Notices& attributions required by libraries that project depends on
+README.txt				 Project's readme documents
+
+Reference:
+	https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html

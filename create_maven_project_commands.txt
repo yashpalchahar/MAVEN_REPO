@@ -1,0 +1,37 @@
+POM - Project Object Model
+
+Archetype is a Maven project templating toolkit.An archetype is defined as an original pattern or model from which all other things of the same kind are made.
+
+Create Maven Core Project:
+	mvn archetype:generate -DarchetypeArtifactId=maven-archetype-quickstart -DgroupId=com.chahar -DartifactId=my-app  -DinteractiveMode=false
+
+Create Maven Web Project:
+	mvn archetype:generate -DarchetypeArtifactId=maven-archetype-webapp -DgroupId=com.chahar.web -DartifactId=my-webapp -DinteractiveMode=false
+    
+
+How do I create documentation:
+mvn archetype:generate \
+  -DarchetypeGroupId=org.apache.maven.archetypes \
+  -DarchetypeArtifactId=maven-archetype-site \
+  -DgroupId=com.mycompany.app \
+  -DartifactId=my-app-site
+
+
+default location= ${user.home}/.m2/repository
+
+.setting.xml -> local/remote repository location ,authentication information . This file should not bundle & distributed.
+Global setting: ${maven.home}/conf/settings.xml 
+User setting: ${user.home}/.m2/settings.xml
+
+Project directory = ${basedir}
+
+
+groupId= package name
+artifactId= project name
+version= project version
+
+=============================================================================================================================================
+Advance topics:
+Aggregation=Multi-Module=In Parent pom contains children pom.xml references.
+
+NOTE: ALL POM inherit from a base Super POM.
